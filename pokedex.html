@@ -1234,7 +1234,7 @@
                 for (i = 0; i < newPokemonArray.length; i++) {
                     var entry = document.createElement("p");
                     entry.innerHTML = `${newPokemonArray[i].name}`;
-                    if (pokemon[i].owned) {
+                    if (newPokemonArray[i].owned) {
                         entry.classList.add("owned");
                     }
                     document.getElementById("pokedex").appendChild(entry);
